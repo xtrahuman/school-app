@@ -24,6 +24,10 @@ default: &default
 development:
   <<: *default
   database: school_app_development
+  host: localhost
+  pool: 5
+  username: school_app
+  password: school_app
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +62,10 @@ development:
 test:
   <<: *default
   database: school_app_test
+  host: localhost
+  pool: 5
+  username: school_app
+  password: school_app
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
